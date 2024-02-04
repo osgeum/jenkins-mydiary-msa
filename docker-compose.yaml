@@ -38,9 +38,7 @@ services:
    - rolling-fe-be 
    
  mydiary-front: 
-  build:
-   context: ./my-diary-front
-   dockerfile: Dockerfile 
+  image: osgeum/mydiary-front:2.0
   container_name: rolling-front 
   restart: always 
   depends_on: 
